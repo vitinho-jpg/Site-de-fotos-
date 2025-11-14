@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+body
+{
+    color:white;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.08);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, #1f2020e5 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    z-index: 99999;
+    
+}
+
+.secao
+{
+    background-color: #1f2020;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.texto-home
+{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
