@@ -8,6 +8,8 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x:;
+    overflow-x: hidden;
 }
 .menu
 {
@@ -16,13 +18,14 @@ body
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.08);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, #1f2020e5 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, #1f2020e5 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     backdrop-filter: blur(10px);
-    z-index: 99999;
+    z-index:9999;
+ 
     
 }
 
@@ -40,4 +43,48 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.sidebox
+{
+    position:absolute;
+    height: 10%;
+    top:0;
+    left: 100%;
+    width: 0;
+    border-radius: 15px;
+    z-index: 1;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #272727;
+    transition: 0.5s;
+    overflow-y: hidden;
+
+}
+.sidebox.open
+{
+    width: 200px;
+    height: 200vh;
+    overflow-y: hidden;
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    
+}
+
+.iconemenu
+{
+  cursor: pointer;
+  transition: 0.5s;
+  overflow-y: hidden;
+}
+
+.fecharaba
+{
+top: auto;
+right: 0;
+padding-left: 10px;
+padding-top: 10px;
+cursor: pointer;
+
 }
