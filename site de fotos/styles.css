@@ -8,7 +8,6 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x:;
     overflow-x: hidden;
 }
 .menu
@@ -88,3 +87,22 @@ padding-top: 10px;
 cursor: pointer;
 
 }
+
+.sobre-mim
+{
+    position:absolute;
+    height: 50vh;
+    width: 50vw;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #272727;
+    border-radius: 15px;
+    color: rgb(224, 224, 224);
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+
+}
+
