@@ -8,7 +8,8 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden;     
+    background-color:#1f2020
 }
 .menu
 {
@@ -31,7 +32,7 @@ body
 .secao
 {
     background-color: #1f2020;
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100vw;
 }
 
@@ -49,7 +50,7 @@ body
     position:absolute;
     height: 10%;
     top:0;
-    left: 100%;
+    right: -200px;
     width: 0;
     border-radius: 15px;
     z-index: 1;
@@ -67,7 +68,7 @@ body
     overflow-y: hidden;
     position: absolute;
     top: 85%;
-    left: 80%;
+    right: 0;
     
 }
 
@@ -95,14 +96,76 @@ cursor: pointer;
     width: 50vw;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate( -50%, 60%);
     background-color: #272727;
     border-radius: 15px;
     color: rgb(224, 224, 224);
     padding-left: 10px;
     padding-top: 10px;
 
-
-
 }
+
+.foto-minha
+{
+    height: 250px;
+    width: 200px;
+    border-radius: 8px;
+    /* position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%); */
+}
+/* .foto-minha:nth-child(1)
+{
+    transform: rotate(-90deg);
+    transform-origin: bottom;
+}
+.foto-minha:nth-child(2)
+{
+    transform: rotate(-45deg);
+    transform-origin: bottom;
+}
+.foto-minha:nth-child(3)
+{
+    transform: rotate(45deg);
+    transform-origin: bottom;
+}
+.foto-minha:nth-child(4)
+{
+    transform: rotate(90deg);
+    transform-origin: bottom;
+} */
+
+.fotos-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 200px;
+    top: 0;
+    bottom: 0;
+    background-color: #000000a8;
+    z-index: 99999;
+    display: none;
+    backdrop-filter: blur(2px);
+    animation: aparecer .3s ease forwards;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* .foto3
+{
+    
+} */
 
